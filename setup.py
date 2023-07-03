@@ -15,11 +15,12 @@ setup(
     zip_safe=True,
     maintainer='root',
     maintainer_email='root@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Log to ros2 bag converter',
+    license='Apache License 2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'log2bag_writer = log_to_bag_py.log2bag_writer:main',
         ],
     },
 )
